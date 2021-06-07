@@ -9,7 +9,7 @@ meta_img: images/example.jpg
 
 <div class="figure">
 
-![](/images/example.jpg)
+![](./static/images/example.jpg)
 
 <p class="caption">Vik, Iceland. Photo by <a href="https://unsplash.com/photos/MLKrf51NV8w">Adam Jang</a>.</p>
 
