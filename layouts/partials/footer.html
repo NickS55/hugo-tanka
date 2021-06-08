@@ -1,0 +1,49 @@
+
+
+<div class="my-4 footer">
+    <div class="container">
+
+        <div class="row justify-content-center">
+            <div class="col-sm-12 col-lg-8">
+                <hr>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-sm-12 col-lg-8">
+                <div class="socials">
+                
+                    {{ if .Site.Params.contact }}
+                    <a href="mailto:{{ .Site.Params.contact }}">Contact</a>
+                    {{ end }}
+
+                    {{ if .Site.Params.github }}
+                    <a href="https://github.com/{{ .Site.Params.github }}" target="_blank">GitHub</a>
+                    {{ end }}
+
+                    {{ if .Site.Params.gitlab }}
+                    <a href="https://gitlab.com/{{ .Site.Params.gitlab }}" target="_blank">GitLab</a>
+                    {{ end }}
+
+                    {{ if .Site.Params.medium }}
+                    <a href="https://medium.com/@{{ .Site.Params.medium }}" target="_blank">Medium</a>
+                    {{ end }}
+
+                    {{ if .Site.Params.twitter }}
+                    <a href="https://twitter.com/{{ .Site.Params.twitter }}" target="_blank">Twitter</a>
+                    {{ end }}
+
+                    {{ if .Site.Params.linkedin }}
+                    <a href="https://www.linkedin.com/in/{{ .Site.Params.linkedin }}"
+                            target="_blank">LinkedIn</a>
+                    {{ end }}
+
+                    {{ if .Site.Params.colophon }}
+                    <a href="{{ .Site.Params.colophon }}">Colophon</a>
+                    {{ end }}
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
