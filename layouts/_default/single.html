@@ -8,6 +8,9 @@
                     <h1 class="mx-0 mx-md-4">{{ .Title }}</h1>
                     <div class="markdown">
                         {{ partial "content" . }}
+                        {{ if not .Lastmod.IsZero }}
+                            Last Modified: {{ .Lastmod.Format "Jan 2, 2006" }}
+                        {{ end }}
                     </div>
                 </div>
             </div>
